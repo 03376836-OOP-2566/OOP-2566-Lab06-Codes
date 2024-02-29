@@ -1,11 +1,13 @@
-﻿var student = new Student();
+﻿Person.name = "Enter your name here";
+System.Console.WriteLine(Person.GetName());
+var student = new Student();
 student.name = "Enter student's name";
 System.Console.WriteLine(student.GetName());
 
-class Person
+static class Person
 {
-    public  string? name;
-    public string GetName()
+    static  public  string? name;
+    static  public string GetName()
     {
         return $"Hello from {name}";
     }
@@ -13,5 +15,5 @@ class Person
 
 class Student : Person
 {
-
+    
 }
